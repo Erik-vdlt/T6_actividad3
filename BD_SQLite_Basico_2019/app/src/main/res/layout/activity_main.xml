@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_agregar_altas"
+        android:layout_width="121dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="71dp"
+        android:onClick="abrirActivities"
+        android:text="@string/txt_agregar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_modificar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_eliminar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_eliminar"
+        android:layout_width="112dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="71dp"
+        android:onClick="abrirActivities"
+        android:text="@string/txt_eliminar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_agregar_altas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_modificar"
+        android:layout_width="136dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="384dp"
+        android:onClick="abrirActivities"
+        android:text="@string/txt_actualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_buscar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_agregar_altas" />
+
+    <Button
+        android:id="@+id/btn_buscar"
+        android:layout_width="114dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="384dp"
+        android:onClick="abrirActivities"
+        android:text="@string/txt_consultas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_modificar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_eliminar" />
+
+</android.support.constraint.ConstraintLayout>
